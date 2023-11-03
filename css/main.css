@@ -203,8 +203,8 @@ body {
 
 @media (max-width: 400px) {
     #header .gnb {
-        gap: 40px;
-        font-size: 2.5rem;
+        gap: 15px;
+        font-size: 2.1rem;
     }
 
 }
