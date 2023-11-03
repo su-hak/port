@@ -1,0 +1,637 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+
+
+/* 디폴트 값 */
+html {
+    font-size: 62.5%;
+}
+
+/* 10px */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+img {
+    vertical-align: top;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+em, address {
+    font-style: normal;
+}
+
+button {
+    border: 0;
+    background: transparent;
+}
+
+
+fieldset, input, textarea, select {
+    vertical-align: middle;
+    border: 0;
+}
+
+
+legend, caption {
+    display: none;
+}
+
+
+body {
+    word-break: keep-all;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.6rem;
+    color: #000;
+    line-height: 1.6;
+}
+
+.inner {
+    max-width: calc(100% - 200px);
+    margin: 0 auto;
+}
+
+@media (max-width: 1600px) {
+    .inner {
+        max-width: calc(100% - 160px);
+    }
+}
+
+@media (max-width: 1400px) {
+    .inner {
+        max-width: calc(100% - 140px);
+    }
+}
+
+@media (max-width: 1200px) {
+    .inner {
+        max-width: calc(100% - 120px);
+    }
+}
+
+@media (max-width: 1000px) {
+    .inner {
+        max-width: calc(100% - 100px);
+    }
+
+    /* 마진 오른쪽 왼쪽 50 */
+}
+
+@media (max-width: 768px) {
+    .inner {
+        max-width: calc(100% - 50px);
+    }
+}
+/*                              전체 배경                              */
+#wrap {
+    background-image: linear-gradient(
+            rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.8)
+    ), url("../assets/wrap-bg.png");
+    position: relative;
+    overflow-x: hidden;
+}
+
+
+/*                              HEADER                              */
+#header {
+    background: rgba(255, 255, 255, 0.8);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid #999;
+    z-index: 999;
+    padding-bottom: 20px;
+}
+
+#header .inner {
+    height: 73px;
+    align-items: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+
+#header h1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 28px;
+}
+
+
+
+
+#header h1 a img {
+    cursor: default; /* 마우스 손가락모양 대신 화살표 유지*/
+}
+
+/*                              이동 메뉴                              */
+#header .gnb {
+    display: flex;
+    gap: 150px;
+    font-size: 4.4rem;
+    padding: 40px 20px 10px 20px;
+}
+
+#header .gnb li {
+    display: none;
+    font-family: 'Nanum Brush Script', cursive;
+    font-weight: bold;
+}
+
+/*                              HEADER 해상도별 사이즈조절                              */
+@media (max-width: 1600px) {
+    #header .gnb {
+        gap: 160px;
+        font-size: 5.1rem;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    #header .gnb {
+        gap: 80px;
+        font-size: 4.1rem;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    #header .gnb {
+        gap: 60px;
+        font-size: 3.6rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+    #header .gnb {
+        gap: 40px;
+        font-size: 3.1rem;
+    }
+
+}
+
+
+/*                              *MAIN 공통 적용사항                              */
+#main {
+    padding-top: 73px;
+}
+
+#main section {
+    padding: 200px 0;
+}
+
+#main h2 {
+    font-size: 5rem;
+    color: #20c997;
+}
+
+#main h2 + p {
+    padding: 20px 0;
+    font-size: 2.4rem;
+    color: #999;
+}
+
+#main .btn_more a {
+    border-bottom: 1px solid #ccc;
+    color: #999;
+    font-weight: 700;
+}
+/*                              전체 섹션 패딩,글자크기 공통 적용                              */
+@media (max-width: 1600px) {
+    #main section {
+        padding: 240px 0;
+    }
+
+    #main h2 {
+        font-size: 6rem;
+    }
+
+    #main h2 + p {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    #main section {
+        padding: 200px 0;
+    }
+
+    #main h2 {
+        font-size: 6rem;
+    }
+
+    #main h2 + p {
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    #main section {
+        padding: 160px 0;
+    }
+
+    #main h2 {
+        font-size: 5.6rem;
+    }
+
+    #main h2 + p {
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #main section {
+        padding: 160px 0;
+    }
+
+    #main h2 {
+        font-size: 4.6rem;
+    }
+
+    #main h2 + p {
+        font-size: 2.3rem;
+    }
+}
+
+
+/*                              SECTION 1                             */
+#sec1 {
+    padding: 100px 0;
+    text-align: center;
+}
+/*                              이미지 뒤쪽에 깔리게 투명도 조절                              */
+.bg_sec1 {
+    background-image: linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+    ), url("../assets/노트북-.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#sec1 h2 {
+    font-weight: 900;
+    font-family: 'DM Serif Text', serif;
+    font-size: 8rem;
+}
+
+#sec1 h2 + p {
+    padding: 20px 0;
+    letter-spacing: 1px;
+    font-size: 2.4rem;
+    color: #999;
+}
+
+
+#sec1 img {
+    max-width: 100%;
+}
+
+/*                              SECTION 1 해상도별 사이즈조절                              */
+
+@media (max-width: 1200px) {
+    #sec1 h2 {
+        font-size: 6rem;
+    }
+
+    #sec1 h2 + p {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #sec1 h2 {
+        font-size: 4rem;
+    }
+
+    #sec1 h2 + p {
+        font-size: 1.6rem;
+    }
+}
+
+
+/*                              SECTION 2                              */
+#sec2 {
+    position: relative;
+    padding: 40px 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+#sec2::before {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    content: '';
+    width: 1px;
+    height: 100%;
+    display: block;
+    background: #ccc;
+}
+
+#sec2 .inner {
+    flex-wrap: wrap;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#sec2 .inner > * {
+    width: calc((100% - 200px) / 2);
+}
+
+
+#sec2 .txt {
+    text-align: center;
+}
+
+#sec2 img {
+    width: 100%;
+    max-width: 100%;
+}
+/*                              SECTION 2 해상도별 사이즈조절                              */
+@media (max-width: 1200px) {
+    #sec2 .inner > * {
+        width: 100%;
+    }
+
+    #sec2::before {
+        display: none;
+    }
+}
+
+
+/*                              SECTION 3                              */
+#sec3 {
+    text-align: center;
+    padding: 100px 0;
+}
+
+#sec3 h2 {
+    padding-bottom: 100px;
+}
+
+#sec3 ul {
+    display: flex;
+    justify-content: center;
+    gap: 50px
+}
+
+#sec3 ul li {
+    width: calc((100% - 120px) / 4);
+}
+
+
+#sec3 ul li span {
+    font-size: 2.3rem;
+    display: inline-block;
+    white-space: nowrap;
+    width: 100%;
+    background: #000;
+    color: #fff;
+    padding: 20px 0;
+}
+
+/*                              SECTION 3 해상도 별 사이즈                              */
+@media (max-width: 1000px) {
+    #sec3 ul {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        min-height: 100%;
+    }
+
+    #sec3 ul > li {
+        display: flex;
+        flex-basis: calc(50% - 40px);
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #sec3 ul li span {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        font-size: 2.3rem;
+        padding: 30px;
+        width: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    #sec3 ul {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        min-height: 100%;
+    }
+
+    #sec3 ul > li {
+        display: flex;
+        flex-basis: calc(50% - 40px);
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #sec3 ul li span {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        font-size: 2rem;
+        padding: 30px;
+        width: 300px;
+    }
+
+}
+
+.txt_center {
+    text-align: center;
+}
+
+
+/*                              SECTION 4                              */
+#sec4 {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+#sec4 img {
+    margin-top: 20px;
+    max-width: 100%;
+    width: 350px;
+    height: 60px;
+}
+/*                              SECTION 4 해상도별 사이즈                              */
+@media (max-width: 1000px) {
+    #sec4 img {
+        margin-top: 0;
+        max-width: 100%;
+        width: 300px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 768px) {
+    #sec4 img {
+        margin-top: -10px;
+        max-width: 100%;
+        width: 230px;
+        height: 30px;
+    }
+}
+
+/*                             SECTION 4에 들어가는 슬라이드 로고 이벤트                             */
+.Slidesbackground {
+    margin: 0;
+    padding: 0;
+
+}
+
+.slideshow-image {
+    border-radius: 3%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.mySlides {
+    border-radius: 3%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.5);
+}
+
+.slideshow-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: auto;
+    padding-top: 50px;
+
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 2.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .2
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+/*                              FOOTER                              */
+#footer {
+    padding: 100px 0;
+}
+
+#footer address {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    color: #999;
+}
+
+#footer .copy {
+    color: #999;
+}
+
+#footer .footer_logo {
+    position: relative;
+    padding-top: 10px;
+}
+
+#footer .footer_logo::before {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    content: '';
+    display: block;
+    width: 40px;
+    height: 1px;
+    background: #ccc;
+}
+
+/*                              FOOTER 해상도별 사이즈                              */
+
+@media (max-width: 1600px) {
+    #footer {
+        font-size: 3.4rem;
+    }
+
+    #footer address {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 1200px) {
+    #footer {
+        font-size: 2.8rem;
+    }
+
+    #footer address {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 1000px) {
+    #footer {
+        font-size: 2.2rem;
+    }
+
+    #footer address {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    #footer {
+        font-size: 1.8rem;
+    }
+
+    #footer address {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
