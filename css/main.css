@@ -474,6 +474,33 @@ body {
 
 }
 
+@media (max-width: 400px) {
+    #sec3 ul {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        min-height: 100%;
+    }
+
+    #sec3 ul > li {
+        display: flex;
+        flex-basis: calc(50% - 40px);
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #sec3 ul li span {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        font-size: 1.4rem;
+        padding: 20px;
+        width: 200px;
+    }
+
+}
+
+
 .txt_center {
     text-align: center;
 }
