@@ -420,7 +420,7 @@ body {
     background: #000;
     color: #fff;
     padding: 20px 0;
-    maxwidth: 100%;
+    max-width: 100%;
 }
 
 /*                              SECTION 3 해상도 별 사이즈                              */
