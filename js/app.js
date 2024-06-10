@@ -60,14 +60,13 @@ ms3.addEventListener('mouseout', function () {
 })
 //                    (마우스 올릴 시 텍스트 전환) END
 
-/*                         SECTION 4 슬라이드 쇼                      */
+/*                         SECTION 14 슬라이드 쇼                      */
 var slideIndex = 0;
 showSlides();
 
 function showSlides() {
     var i;
     var slides = document.getElementsByClassName("mySlides");
-
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
@@ -79,5 +78,5 @@ function showSlides() {
 
     setTimeout(showSlides, 2800); // 2.8초마다 이미지가 체인지
 }
-/*                     (SECTION 4 슬라이드 쇼) END                       */
+/*                     (SECTION 14 슬라이드 쇼) END                       */
 
