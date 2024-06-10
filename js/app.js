@@ -80,3 +80,13 @@ function showSlides() {
 }
 /*                     (SECTION 14 슬라이드 쇼) END                       */
 
+$('.go-page-btn').on('click', function () {
+    var altText = $(this).attr('alt'); // 버튼 alt 속성 값 호출
+    var uri = "https://su-hak.github.io/" + altText + "/";
+    window.location.href = uri; // 해당 URI로 페이지 이동
+});
+
+$('.riot-devPage-btn').on('click', function () {
+    var uri = "https://developer.riotgames.com/docs/lol";
+    window.location.href = uri;
+});
