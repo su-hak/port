@@ -343,6 +343,7 @@ body {
 #sec1 {
     padding: 100px 0;
     text-align: center;
+    margin-top: 30px;
 }
 /*                              이미지 뒤쪽에 깔리게 투명도 조절                              */
 .bg_sec1 {
@@ -592,6 +593,52 @@ body {
     }
 }
 /*                              SECTION 5                              */
+/*                              SECTION 6                              */
+#sec6 {
+    position: relative;
+    padding: 40px 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+#sec6::before {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    content: '';
+    height: 100%;
+    display: block;
+    background: #ccc;
+}
+
+#sec6 .inner {
+    flex-wrap: wrap;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#sec6 .inner > * {
+    /*width: calc((100% - 200px) / 2);*/
+}
+
+
+#sec6 img {
+    width: 100%;
+    max-width: 100%;
+}
+/*                              SECTION 4 해상도별 사이즈조절                              */
+@media (max-width: 1200px) {
+    #sec6 .inner > * {
+        width: 100%;
+    }
+
+    #sec6::before {
+        display: none;
+    }
+}
+/*                              SECTION 6                              */
 
 /*                              SECTION 14                              */
 #sec14 {
@@ -789,7 +836,7 @@ body {
 
 /*                              FOOTER                              */
 #footer {
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 #footer address {
@@ -824,12 +871,12 @@ body {
 
 @media (max-width: 1600px) {
     #footer {
-        font-size: 3.4rem;
+        font-size: 1.8rem;
     }
 
     #footer address {
         flex-direction: column;
-        gap: 10px;
+        gap: 0;
     }
 }
 
