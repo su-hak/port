@@ -7,19 +7,11 @@ $('#header').on('mouseover', function () {
 
 
 })
-
-$('#header').on('mouseout', function () {
-    console.log("1");
-    $('.gnb li').css('display', 'none');
-    $('#port').css('display', 'block');
-
-
-})
 //                         (HEADER 마우스 로고노출) END
 
 //                         마우스 올릴 시 텍스트 전환
 //section 3 ul li span mouseover,out 속성 (classname은 안됨 id만 가능)
-var ms = document.getElementById('ms00')
+/*var ms = document.getElementById('ms00')
 
 ms.addEventListener('mouseover', function () {
     ms.innerText = 'KIM SUHAK';
@@ -57,11 +49,11 @@ ms3.addEventListener('mouseover', function () {
 
 ms3.addEventListener('mouseout', function () {
     ms3.innerText = 'Adress';
-})
+})*/
 //                    (마우스 올릴 시 텍스트 전환) END
 
 /*                         SECTION 14 슬라이드 쇼                      */
-var slideIndex = 0;
+/*var slideIndex = 0;
 showSlides();
 
 function showSlides() {
@@ -77,7 +69,7 @@ function showSlides() {
     slides[slideIndex - 1].style.display = "block";
 
     setTimeout(showSlides, 2800); // 2.8초마다 이미지가 체인지
-}
+}*/
 /*                     (SECTION 14 슬라이드 쇼) END                       */
 
 $('.go-page-btn').on('click', function () {
